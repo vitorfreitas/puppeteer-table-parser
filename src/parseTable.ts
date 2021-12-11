@@ -8,7 +8,7 @@ export const parseTableFactory = (settings: FullParserSettings) => {
 
   return async (table: ElementHandle, addHeader: boolean): Promise<string[]> => {
     const headerRows: ElementHandle[] = await table.$$('thead tr');
-    const rows: ElementHandle[] = (await table.$$('tbody:nth-of-type(2) tr')) || (await table.$$('tr'));
+    const rows: ElementHandle[] = (await table.$$(settings.tbodySelector)) || (await table.$$('tr'));
 
     if (headerRows.length === 0 && rows.length === 0) {
       return [];

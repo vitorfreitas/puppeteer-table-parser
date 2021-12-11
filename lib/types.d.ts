@@ -15,6 +15,7 @@ export interface ParserSettingsOptional {
     asArray: boolean;
     colFilter: (elText: string[], index: number) => string;
     colParser: (value: string, formattedIndex: number, getColumnIndex: GetColumnIndexType) => string;
+    tbodySelector: string;
 }
 export interface ParserSettings extends Partial<ParserSettingsOptional> {
     selector: string;
