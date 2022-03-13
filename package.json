@@ -1,12 +1,12 @@
 {
-  "name": "puppeteer-table-parser",
+  "name": "vitorfreitas-puppeteer-table-parser",
   "description": "Library to make parsing website tables much easier!",
   "keywords": [
     "puppeteer",
     "puppeteer table parser",
     "parsing html tables"
   ],
-  "version": "1.2.0",
+  "version": "1.0.0",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "files": [
